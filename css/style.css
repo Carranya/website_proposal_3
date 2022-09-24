@@ -1,0 +1,38 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#head {
+ 
+    background-color: lightpink;
+    padding: 2em;
+
+
+}
+
+
+
+#main {
+    height: 1000px;
+}
+
+#idMainPic {
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+.contentPage {
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    display: block;
+    background-color: lightgreen;
+}
+
+#foot {
+    background-color: yellow;
+}
