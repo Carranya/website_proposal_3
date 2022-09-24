@@ -1,38 +1,36 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    background-color: lightblue;    
 }
 
 #head {
- 
-    background-color: lightpink;
     padding: 2em;
-
-
+    margin: 0;
 }
 
 
 
-#main {
-    height: 1000px;
-}
-
-#idMainPic {
-    height: 100%;
-    object-fit: cover;
-    overflow: visible;
-}
-
-.contentPage {
+#contentPage {
     position: absolute;
-    top: 150px;
-    left: 10%;
+    top: 200px;
+    left: 0;
     width: 80%;
     height: 80%;
-    display: block;
+    /*display: block;*/
     background-color: lightgreen;
+    transform: translate(0, 0);
+    transition: transform 1s;
 }
 
-#foot {
-    background-color: yellow;
+.toggle {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: lightgreen;
+
 }
+
