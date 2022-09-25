@@ -1,39 +1,32 @@
-
-let o = 0;
+const pages = [["idLabelHome", "idHome"],
+                ["idLabelNews", "idNews"],
+                ["idLabelContact", "idContact"],
+                ["idLabelAbout" ,"idAbout"]];
 
 window.onload = function(){
-    const pageLabels = ["idLabelHome",
-                        "idLabelNews",
-                        "idLabelContact",
-                        "idLabelAbout"];
 
-   
+    /*Load page "Home" from start*/
+    openPage(pages, 0);
 
+    /*Load picked page*/
     for (let i=0; i<4; i++){
-        document.getElementById(pageLabels[i]).addEventListener("click", function(){openPage(pageLabels[i])});
+        document.getElementById(pages[i][0]).addEventListener("click", function(){openPage(pages, i)});
     }
 }
 
 
-function openPage(id) {
+function openPage(pages, id) {
 
-    
+    /*Close all pages*/
+    for(let setClose=0; setClose<4; setClose++){
+        
+        let pageclose = document.getElementById(pages[setClose][1]);
+            pageclose.style.transform = "translate(-695px, 0)";
+    }
 
-    const pages = {idLabelHome:"idHome",
-                    idLabelNews:"idNews",
-                    idLabelContact:"idContact",
-                    idLabelAbout:"idAbout"};
-
-        if ( o == 0){
-            let pageOpen = document.getElementById(pages[id]);
-            pageOpen.style.transform = "translate(-695px, 0)";
-            o++;
-            alert(o);
-        } else {
-            let pageOpen = document.getElementById(pages[id]);
+    /*Open picked page*/
+    let pageOpen = document.getElementById(pages[id][1]);
             pageOpen.style.transform = "translate(0, 0)";
-            o--;
-            alert(o);
-        }
+
 }
 

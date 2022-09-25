@@ -23,7 +23,7 @@
 
        <div id="idContact" class="contentPage">
             <div id="idLabelContact" class="menuLabel">Kontakt</div>
-            <div id="contentContact">Test Test</div>
+            <div id="contentContact"><?php include "pages/contact.php"; ?></div>
        </div>
 
        <div id="idAbout" class="contentPage">
