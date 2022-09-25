@@ -1,3 +1,6 @@
+@import "home.css";
+@import "about.css";
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -9,20 +12,28 @@ body {
     margin: 0;
 }
 
+#headTitle {
+    padding: 1em;
+    background-color: lightgreen;  
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
 
 .contentPage {
     position: absolute;
     top: 200px;
-    left: 200px;
-    width: 500px;
+    left: 150px;
+    width: 1000px;
     display: block;
     background-color: lightgreen;
+    transform: translate(-1175px, 0);
     transition: transform 1s;
     border: 5px solid black;
     border-radius: 10px;
     text-align: left;
     word-break: break-word;
-    padding: 2em;
+    padding: 20px;
 }
 
 .menuLabel {
@@ -35,6 +46,9 @@ body {
     background-color: lightgreen;
     border: 5px solid black;
     border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
 }
 
 #idHome {
@@ -42,15 +56,19 @@ body {
 }
 
 #idNews {
-    top: 250px;
-}
-
-#idContact {
-    top: 300px;
+    top: 275px;
 }
 
 #idAbout {
     top: 350px;
+}
+
+#idContact {
+    top: 425px;
+}
+
+.classTitle {
+    text-align: center;
 }
 
 .classPic {
@@ -58,4 +76,5 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     margin: 2em;
+    float: right;
 }

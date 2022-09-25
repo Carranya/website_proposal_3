@@ -1,7 +1,8 @@
 const pages = [["idLabelHome", "idHome"],
                 ["idLabelNews", "idNews"],
-                ["idLabelContact", "idContact"],
-                ["idLabelAbout" ,"idAbout"]];
+                ["idLabelAbout" ,"idAbout"],
+                ["idLabelContact", "idContact"]
+            ];
 
 window.onload = function(){
 
@@ -10,7 +11,7 @@ window.onload = function(){
 
     /*Load picked page*/
     for (let i=0; i<4; i++){
-        document.getElementById(pages[i][0]).addEventListener("click", function(){openPage(pages, i)});
+        document.getElementById(pages[i][0]).addEventListener("click", function(){openPage(pages, i);});
     }
 }
 
@@ -21,7 +22,7 @@ function openPage(pages, id) {
     for(let setClose=0; setClose<4; setClose++){
         
         let pageclose = document.getElementById(pages[setClose][1]);
-            pageclose.style.transform = "translate(-695px, 0)";
+            pageclose.style.transform = "translate(-1175px, 0)";
     }
 
     /*Open picked page*/
