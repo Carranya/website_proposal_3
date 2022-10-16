@@ -1,5 +1,6 @@
 @import "home.css";
 @import "about.css";
+@import "websites.css";
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,6 +50,7 @@ body {
     text-align: center;
     font-weight: bold;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 #idHome {
