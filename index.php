@@ -16,8 +16,8 @@
        </div>
 
        <div id="idNews" class="contentPage">
-            <div id="idLabelNews" class="menuLabel"><p>News</p></div>
-            <div id="contentNews"><?php include "pages/news.php"; ?></div>
+            <div id="idLabelNews" class="menuLabel"><p>Websites</p></div>
+            <div id="contentNews"><?php include "pages/websites.php"; ?></div>
        </div>
 
        <div id="idAbout" class="contentPage">
