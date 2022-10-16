@@ -1,0 +1,15 @@
+#websitesContent {
+    display: flex;
+}
+
+.websitesPic {
+    width: 300px;
+    transition: transform 0.5s;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border: 1px solid black;
+}
+
+.websitesPic:hover {
+    transform: scale(1.2);
+}
