@@ -15,4 +15,3 @@
     Zivilstand: verheiratet<br>
     Nationalität: Schweiz / Heimat: Wängi TG</p>
 </div>
-    

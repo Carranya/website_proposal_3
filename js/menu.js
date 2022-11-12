@@ -30,4 +30,3 @@ function openPage(pages, id) {
             pageOpen.style.transform = "translate(0, 0)";
 
 }
-
