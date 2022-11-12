@@ -1,6 +1,7 @@
 @import "home.css";
-@import "about.css";
 @import "websites.css";
+@import "about.css";
+@import "contact.css";
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,9 +33,17 @@ body {
     transition: transform 1s;
     border: 5px solid black;
     border-radius: 10px;
-    text-align: left;
+    text-align: justify;
     word-break: break-word;
     padding: 20px;
+}
+
+.contentPage a{
+    color: black;
+}
+
+.contentPage h1,h2{
+    text-align: center;
 }
 
 .menuLabel {
@@ -69,7 +78,12 @@ body {
     top: 425px;
 }
 
-.classTitle {
+.centerPage {
+    display: flex;
+    justify-content: center;
+}
+
+.centerPic {
     text-align: center;
 }
 
@@ -78,5 +92,10 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     margin: 2em;
-    float: right;
+}
+
+@media (min-width: 640px) {
+    .classPic {
+        float: right;
+    }
 }
